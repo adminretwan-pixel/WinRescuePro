@@ -1,0 +1,42 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Header -->
+    <sys:String x:Key="AppTitle">🛡️ WinRescue Pro</sys:String>
+    <sys:String x:Key="AppVersion">v1.0</sys:String>
+    <sys:String x:Key="SecurityStatus">System Protected • Ready</sys:String>
+    <sys:String x:Key="Slogan">Windows Emergency.. One Click, Full Safety.</sys:String>
+
+    <!-- Cards -->
+    <sys:String x:Key="CardNetworkTitle">🌐 Fix Internet &amp; Network</sys:String>
+    <sys:String x:Key="CardNetworkDesc">Fix slow browsing and connection drops (Flush DNS &amp; Winsock)</sys:String>
+
+    <sys:String x:Key="CardUpdateTitle">🔄 Fix Windows Update</sys:String>
+    <sys:String x:Key="CardUpdateDesc">Unstick and clear Windows Update blockages</sys:String>
+
+    <sys:String x:Key="CardSoundTitle">🔊 Fix Sound &amp; Printer</sys:String>
+    <sys:String x:Key="CardSoundDesc">Restart audio services and clear stuck print jobs</sys:String>
+
+    <sys:String x:Key="CardStoreTitle">🛍️ Fix Microsoft Store</sys:String>
+    <sys:String x:Key="CardStoreDesc">Reset Store cache and re-register packages</sys:String>
+
+    <sys:String x:Key="CardScanTitle">🩺 Deep Scan &amp; System Repair</sys:String>
+    <sys:String x:Key="CardScanDesc">Run deep scan tools (DISM &amp; SFC)</sys:String>
+
+    <sys:String x:Key="BtnExport">📄 Export Detailed Report (HTML)</sys:String>
+
+    <!-- Console -->
+    <sys:String x:Key="ConsoleTitle">Smart Screen - Live Explanation</sys:String>
+    <sys:String x:Key="ConsoleReady">✅ Ready... Choose a repair card from the right</sys:String>
+
+    <!-- Success Messages -->
+    <sys:String x:Key="SuccessMessage">✅ Repair completed! Please restart your PC now.</sys:String>
+    <sys:String x:Key="RestorePointCreating">🛡️ Creating system restore point...</sys:String>
+    <sys:String x:Key="RestorePointSuccess">✅ Restore point created successfully</sys:String>
+
+    <!-- Language -->
+    <sys:String x:Key="LangButton">العربية</sys:String>
+    <sys:String x:Key="CurrentLang">English</sys:String>
+
+</ResourceDictionary>
