@@ -1,12 +1,12 @@
 using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using Wpf.Ui.Controls;
 using WinRescuePro.Services;
 
 namespace WinRescuePro
 {
-    public partial class MainWindow : FluentWindow
+    public partial class MainWindow : Wpf.Ui.Controls.FluentWindow
     {
         private readonly RepairEngine _repairEngine;
         private readonly RestorePointService _restorePointService;
