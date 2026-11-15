@@ -1,0 +1,42 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- الهيدر -->
+    <sys:String x:Key="AppTitle">🛡️ WinRescue Pro</sys:String>
+    <sys:String x:Key="AppVersion">v1.0</sys:String>
+    <sys:String x:Key="SecurityStatus">النظام محمي • جاهز للتدخل</sys:String>
+    <sys:String x:Key="Slogan">طوارئ الويندوز.. بضغطة زر وبأمان تام.</sys:String>
+
+    <!-- البطاقات -->
+    <sys:String x:Key="CardNetworkTitle">🌐 إصلاح الإنترنت والشبكة</sys:String>
+    <sys:String x:Key="CardNetworkDesc">حل بطء التصفح وانقطاع الاتصال (Flush DNS &amp; Winsock)</sys:String>
+
+    <sys:String x:Key="CardUpdateTitle">🔄 إصلاح تحديثات الويندوز</sys:String>
+    <sys:String x:Key="CardUpdateDesc">فك تعليق ونقاط توقف Windows Update</sys:String>
+
+    <sys:String x:Key="CardSoundTitle">🔊 إصلاح الصوت والطابعة</sys:String>
+    <sys:String x:Key="CardSoundDesc">إعادة إحياء خدمات الصوت وحذف مهام الطباعة العالقة</sys:String>
+
+    <sys:String x:Key="CardStoreTitle">🛍️ إصلاح متجر Microsoft Store</sys:String>
+    <sys:String x:Key="CardStoreDesc">إعادة ضبط كاش المتجر وتسجيل ملفاته من جديد</sys:String>
+
+    <sys:String x:Key="CardScanTitle">🩺 الفحص الشامل وإصلاح ملفات النظام</sys:String>
+    <sys:String x:Key="CardScanDesc">تشغيل أدوات الفحص العميق (DISM &amp; SFC)</sys:String>
+
+    <sys:String x:Key="BtnExport">📄 تصدير تقرير مفصل للمساعدة (HTML)</sys:String>
+
+    <!-- الشاشة السوداء -->
+    <sys:String x:Key="ConsoleTitle">الشاشة الذكية - شرح لحظي</sys:String>
+    <sys:String x:Key="ConsoleReady">✅ جاهز لاستقبال أوامرك... اختر نوع الإصلاح من البطاقات</sys:String>
+
+    <!-- رسائل النجاح -->
+    <sys:String x:Key="SuccessMessage">✅ تم الإصلاح بنجاح! يُفضل إعادة تشغيل جهاز الكمبيوتر الآن.</sys:String>
+    <sys:String x:Key="RestorePointCreating">🛡️ جاري إنشاء نقطة استعادة للنظام...</sys:String>
+    <sys:String x:Key="RestorePointSuccess">✅ تم إنشاء نقطة الاستعادة بنجاح</sys:String>
+
+    <!-- اللغة -->
+    <sys:String x:Key="LangButton">English</sys:String>
+    <sys:String x:Key="CurrentLang">العربية</sys:String>
+
+</ResourceDictionary>
