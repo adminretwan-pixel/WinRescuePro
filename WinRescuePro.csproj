@@ -5,12 +5,13 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Assets\icon_shield.ico</ApplicationIcon>
-    <AssemblyName>WinRescuePro</AssemblyName>
+    <AssemblyName>TavrynexoFixify</AssemblyName>
     <RootNamespace>WinRescuePro</RootNamespace>
     <Version>1.0.0</Version>
-    <Authors>Tavrynexo</Authors>
-    <Product>WinRescue Pro</Product>
-    <Description>طوارئ الويندوز.. بضغطة زر وبأمان تام.</Description>
+    <Authors>Radwan Almsora</Authors>
+    <Company>Radwan Almsora</Company>
+    <Product>Tavrynexo fixify</Product>
+    <Description>Tavrynexo fixify - أداة صيانة وإصلاح الويندوز بضغطة زر</Description>
   </PropertyGroup>
 
   <ItemGroup>

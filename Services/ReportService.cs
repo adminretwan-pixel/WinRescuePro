@@ -21,7 +21,7 @@ namespace WinRescuePro.Services
 <html dir='rtl' lang='ar'>
 <head>
     <meta charset='UTF-8'>
-    <title>WinRescue Pro - تقرير الفحص</title>
+    <title>Tavrynexo fixify - تقرير الفحص</title>
     <style>
         body {{ font-family: 'Segoe UI', Tahoma, Arial; background: #0f172a; color: #e2e8f0; padding: 40px; }}
         .container {{ max-width: 900px; margin: 0 auto; background: #1e293b; border-radius: 12px; padding: 30px; }}
@@ -35,7 +35,7 @@ namespace WinRescuePro.Services
 </head>
 <body>
     <div class='container'>
-        <h1>🛡️ WinRescue Pro - تقرير الفحص</h1>
+        <h1>🛡️ Tavrynexo fixify - تقرير الفحص</h1>
         
         <div class='info-box'>
             <h3>📋 معلومات النظام</h3>
@@ -49,14 +49,14 @@ namespace WinRescuePro.Services
         <div class='log'>{logContent}</div>
         
         <div class='footer'>
-            <p>تم إنشاء هذا التقرير بواسطة WinRescue Pro v1.0</p>
+            <p>تم إنشاء هذا التقرير بواسطة Tavrynexo fixify v1.0</p>
             <p>{LocalizationService.GetString("Slogan")}</p>
         </div>
     </div>
 </body>
 </html>";
 
-                var fileName = $"WinRescueReport_{DateTime.Now:yyyyMMdd_HHmmss}.html";
+                var fileName = $"TavrynexoFixifyReport_{DateTime.Now:yyyyMMdd_HHmmss}.html";
                 var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
                 
                 File.WriteAllText(filePath, html, Encoding.UTF8);

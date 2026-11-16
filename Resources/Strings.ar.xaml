@@ -3,7 +3,7 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!-- الهيدر -->
-    <sys:String x:Key="AppTitle">🛡️ WinRescue Pro</sys:String>
+    <sys:String x:Key="AppTitle">🛡️ Tavrynexo fixify</sys:String>
     <sys:String x:Key="AppVersion">v1.0</sys:String>
     <sys:String x:Key="SecurityStatus">النظام محمي • جاهز للتدخل</sys:String>
     <sys:String x:Key="Slogan">طوارئ الويندوز.. بضغطة زر وبأمان تام.</sys:String>
@@ -39,4 +39,10 @@
     <sys:String x:Key="LangButton">English</sys:String>
     <sys:String x:Key="CurrentLang">العربية</sys:String>
 
+
+    <!-- حول البرنامج -->
+    <sys:String x:Key="AboutTitle">حول البرنامج</sys:String>
+    <sys:String x:Key="AboutAppVersion">Tavrynexo fixify • الإصدار 1.0.0</sys:String>
+    <sys:String x:Key="AboutDeveloper">المطور: رضوان المسوري</sys:String>
+    <sys:String x:Key="AboutEmail">البريد الإلكتروني: retwan.tech@gmail.com</sys:String>
 </ResourceDictionary>

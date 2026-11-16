@@ -1,4 +1,4 @@
-name: Build WinRescuePro EXE
+name: Build Tavrynexo fixify EXE & MSIX
 
 on:
   push:
@@ -30,11 +30,32 @@ jobs:
           -p:PublishSingleFile=true
           -p:IncludeNativeLibrariesForSelfExtract=true
           -p:EnableCompressionInSingleFile=true
-          -o ./release
+          -p:DebugType=None
+          -p:DebugSymbols=false
+          -o ./release-exe
+
+      - name: Publish and Pack MSIX for Microsoft Store
+        shell: pwsh
+        run: |
+          dotnet publish WinRescuePro.csproj -c Release -r win-x64 --self-contained true -p:DebugType=None -p:DebugSymbols=false -o ./msix-staging
+          Copy-Item Packaging/AppxManifest.xml ./msix-staging/AppxManifest.xml -Force
+          New-Item -ItemType Directory -Force -Path ./msix-staging/Assets | Out-Null
+          Copy-Item Packaging/StoreAssets/*.png ./msix-staging/Assets/ -Force
+          New-Item -ItemType Directory -Force -Path ./release-msix | Out-Null
+          $makeappx = Get-ChildItem "C:\Program Files (x86)\Windows Kits\10\bin\*\x64\makeappx.exe" | Sort-Object FullName -Descending | Select-Object -First 1 -ExpandProperty FullName
+          if (-not $makeappx) { throw "makeappx.exe not found" }
+          & $makeappx pack /d ./msix-staging /p ./release-msix/TavrynexoFixify_1.0.0.0_x64.msix /o
 
       - name: Upload EXE Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: WinRescuePro-win-x64
-          path: ./release/WinRescuePro.exe
+          name: TavrynexoFixify-win-x64-exe
+          path: ./release-exe/TavrynexoFixify.exe
+          if-no-files-found: error
+
+      - name: Upload MSIX Store Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TavrynexoFixify-win-x64-msix
+          path: ./release-msix/TavrynexoFixify_1.0.0.0_x64.msix
           if-no-files-found: error

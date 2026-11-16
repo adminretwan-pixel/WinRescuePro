@@ -150,7 +150,21 @@
                         </StackPanel>
                     </ui:CardAction>
 
-                    <!-- زر التصدير -->
+                    <!-- حول البرنامج -->
+            <Border Background="#1E293B" BorderBrush="#334155" BorderThickness="1" CornerRadius="8" Padding="16,12" Margin="0,0,0,15">
+                <StackPanel>
+                    <TextBlock Text="{DynamicResource AboutTitle}"
+                               FontSize="15" FontWeight="Bold" Foreground="#F8FAFC"/>
+                    <TextBlock Text="{DynamicResource AboutAppVersion}"
+                               FontSize="12" Foreground="#CBD5E1" Margin="0,6,0,0"/>
+                    <TextBlock Text="{DynamicResource AboutDeveloper}"
+                               FontSize="12" Foreground="#94A3B8" Margin="0,3,0,0"/>
+                    <TextBlock Text="{DynamicResource AboutEmail}"
+                               FontSize="12" Foreground="#38BDF8" Margin="0,3,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- زر التصدير -->
                     <Button Click="BtnExport_Click"
                             Background="#22C55E" Foreground="White"
                             Padding="20,15" FontSize="14" FontWeight="Bold">
