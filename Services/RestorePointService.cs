@@ -12,7 +12,7 @@ namespace WinRescuePro.Services
             {
                 try
                 {
-                    using (var scope = new ManagementScope(@"\\localhost\root\default"))
+                    var scope = new ManagementScope(@"\\localhost\root\default");
                     {
                         scope.Connect();
                         
